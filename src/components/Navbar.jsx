@@ -12,7 +12,6 @@ const Navbar = () => {
         <img src={Logo} alt="" />
         <p className='line'></p>
         {mobileClick !==true?<p className='uu' onClick={()=>setMo(!mobileClick)} style={{textAlign:"center",cursor:"pointer"}}>Menu<i className='bx bx-planet bx-md'></i></p>:""}
-
          <ul className={`navla ${mobileClick===true?"visible":""}`}>
             <i onClick={()=>setMo(!mobileClick)} className='bx bxs-x-circle bx-md aa'></i>
             <li><Link to="/"><span>00</span> Home</Link></li>
