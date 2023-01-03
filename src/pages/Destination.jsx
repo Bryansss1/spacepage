@@ -15,7 +15,7 @@ useEffect(()=>{
 axios.get("/space-tourism-website-main/starter-code/data.json")
 .then(res=>setPlantes(res.data))
 },[])
-console.log(planets)
+
 
     return (
         <section className={styles.destination_section}>
@@ -45,9 +45,9 @@ console.log(planets)
         />
         <Carousel.Caption>
         <div className={styles.dive}>
-          <h3>{planets.destinations?.[2].name}</h3>
+          <h3>EUROPA</h3>
           <p className={styles.info}>
-          {planets.destinations?.[2].description}
+          The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
           </p>
         </div>
         </Carousel.Caption>
@@ -73,9 +73,9 @@ console.log(planets)
         />
         <Carousel.Caption>
         <div className={styles.dive}>
-          <h3>{planets.destinations?.[1].name}</h3>
+          <h3>MARS</h3>
           <p className={styles.info}>
-          {planets.destinations?.[1].description}
+          Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!
           </p>
         </div>
         </Carousel.Caption>
@@ -97,13 +97,13 @@ console.log(planets)
         <img
           className={styles.images_destination}
           src={moon}
-          alt={planets.destinations?.[0].description}
+          alt="See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites."
         />
         <Carousel.Caption>
         <div className={styles.dive}>
-          <h3>{planets.destinations?.[0].name}</h3>
+          <h3>MOON</h3>
           <p className={styles.info}>
-          {planets.destinations?.[0].description}
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
           </p>
         </div>
         </Carousel.Caption>
@@ -125,12 +125,12 @@ console.log(planets)
         <img
           className={styles.images_destination}
           src={titan}
-          alt="Third slide"
+          alt="TITAN"
         />
         <Carousel.Caption>
-          <h3>{planets.destinations?.[3].name}</h3>
+          <h3>TITAN</h3>
           <p className={styles.info}>
-          {planets.destinations?.[3].description}
+          The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
           </p>
         </Carousel.Caption>
       </Carousel.Item>
