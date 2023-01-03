@@ -1,0 +1,208 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+body{
+background-image: url(/space-tourism-website-main/starter-code/assets/destination/background-destination-mobile.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+min-height: 100vh;
+transition: 0.5s ease;
+background-repeat: no-repeat;
+}
+
+.destination_section{
+.title_span{
+    color: gray;
+}
+h2{
+    text-align: center;
+    margin: 0 .1rem;
+    color: white;
+    margin-bottom: 2.5rem;
+}
+.info{
+    font-size: .8rem;
+}
+.images_destination{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;
+width: 100%;
+max-width: 13rem;
+animation: backco 6s infinite;
+animation-timing-function: linear;
+}
+.dive{
+    text-align: center;
+}
+
+.list_km{
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+list-style: none;
+gap: 1rem;
+text-shadow: 1px 1px 1px rgb(119, 118, 118);
+margin-bottom: 2rem;
+span{
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    color: gray;
+    font-weight: 900;
+    animation: infinite zoomm 3s;
+    animation-timing-function: linear;
+}
+}
+
+}
+
+
+
+
+
+
+@keyframes backco {
+    0%{
+        transform: rotate(360deg);
+        border-radius: 60%;
+        background-color: rgb(91, 120, 253);
+     }
+     50%{
+        border-radius: 40%;
+        background-color: rgba(255, 255, 255, 0.39);
+     }
+     100%{
+        border-radius: 60%;
+        background-color: rgb(91, 120, 253);
+     }
+}
+
+@keyframes zoomm {
+    0%{
+       color: rgb(91, 120, 253);
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        color: rgb(91, 120, 253);
+    }
+}
+
+@keyframes rotatee{
+    0%{
+        transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+@media screen and (min-width:500px){
+    .destination_section{
+        h3{
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        .info{
+            font-size: 1rem;
+        }
+        .images_destination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        max-width: 24rem;
+        animation: backco 6s infinite;
+        animation-timing-function: linear;
+        }
+        .dive{
+            text-align: center;
+        }
+        .list_km{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            list-style: none;
+            gap: 1rem;
+            text-shadow: 1px 1px 1px rgb(119, 118, 118);
+            margin-bottom: 2rem;
+            span{
+                font-size: 1.2rem;
+                text-shadow: 1px 1px 1px rgb(0, 0, 0);
+                color: gray;
+                font-weight: 900;
+                animation: infinite zoomm 3s;
+                animation-timing-function: linear;
+            }
+            }
+        }
+    body{
+        background-image: url(/space-tourism-website-main/starter-code/assets/destination/background-destination-tablet.jpg);
+    }
+}
+
+
+
+
+@media screen and (min-width:750px) {
+    .destination_section{
+        h3{
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+        .info{
+            font-size: 1.2rem;
+        }
+        .images_destination{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        max-width: 30rem;
+        animation: backco 6s infinite;
+        animation-timing-function: linear;
+        }
+        .dive{
+            text-align: center;
+        }
+
+        .list_km{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            list-style: none;
+            gap: 1rem;
+            text-shadow: 1px 1px 1px rgb(119, 118, 118);
+            margin-bottom: 2rem;
+            span{
+                font-size: 1.2rem;
+                text-shadow: 1px 1px 1px rgb(0, 0, 0);
+                color: gray;
+                font-weight: 900;
+                animation: infinite zoomm 3s;
+                animation-timing-function: linear;
+            }
+            }
+
+
+        }
+    body{
+        background-image: url(/space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg);
+    }
+}

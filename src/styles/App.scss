@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.uu{
+  z-index: 20;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-top: 2rem;
+}
+
+.aa{
+  position:relative;
+  left: 80%;
+  color: rgb(255, 253, 253);
+  cursor: pointer;
+}
+
+.navbar-layout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img{
+    z-index: 20;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    animation: ilu infinite 4s;
+    animation-timing-function: linear;
+  }
+}
+
+.navla{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  span{
+    font-weight: 900;
+  }
+  height: 100vh;
+  padding: 1.5rem;
+  background-color: rgba(128,109,109,.254);
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  width: 50%;
+  max-width: 20rem;
+  gap: 2rem;
+  li{
+    transition: all .2s;
+  }
+  li:hover{
+    border-bottom: 3px solid rgba(255, 255, 255, 0.233);
+  }
+  a{
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    text-shadow: 1px 1px 1px black;
+  }
+  a:hover{
+    color: rgb(159, 153, 252);
+  }
+}
+
+
+@keyframes ilu {
+  0%{
+      background-color: rgb(248, 247, 247);
+      border-radius: 100%;
+      transform: scale(1);
+  }
+  50%{
+    transform: scale(1.3);
+  }
+100%{
+  transform: scale(1);
+} 
+}
+
+
+
+  .visible{
+    display: flex;
+  }
+  .invisible{
+    display: none;
+  }
+
+.home-section{
+color: white;
+background-image: url("/space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg");
+height:100vmax;
+width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+.header-home{
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 90%;
+  h1{
+    font-size: 5rem;
+  }
+}
+button{
+font-weight: 900;
+font-size:2rem;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 15rem;
+width: 15rem;
+border-radius:100%;
+transition: all .3s;
+animation: rotatee infinite 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+cursor: pointer;
+}
+button:hover{
+  box-shadow: 2px 2px 8px 2px whitesmoke;
+}
+}
+@keyframes rotatee{
+  0%{
+      transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:500px){
+.home-section{
+  background-image: url("/space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  transition: 0.5s ease;
+}
+}
+
+
+
+
+@media screen and (min-width:700px) {
+  .line{
+    border-bottom: 1px solid gray;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .soyou{
+    font-weight: 100;
+    font-size: 1rem;
+  }
+  .flexi-home{
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .home-section{
+background-image: url("/space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg");
+background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: 0.5s ease;
+.header-home{
+  width: 50%;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 90%;
+  h1{
+    font-size: 6rem;
+  }
+  
+}
+button{
+font-weight: 900;
+
+font-size:2rem;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 15rem;
+width: 15rem;
+border-radius:100%;
+transition: all .2s;
+animation: rotatee infinite 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+  }
+  .navbar-layout{
+    padding-top: 2rem;
+      img{
+        margin-top: 1rem;
+        margin-left: 1rem;
+      }
+    
+  }
+  .uu{
+    display: none;
+  }
+  .aa{
+    display: none;
+  }
+  .navla{
+    position: static;
+    height: auto;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 40rem;
+    justify-content: space-around;
+    gap: 0;
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+    a{
+      text-decoration: none;
+      color: white;
+    }
+    li{
+      transition: all .2s;
+    }
+    li:hover{
+      border-bottom: 3px solid rgba(255, 255, 255, 0.233);
+    }
+  }
+}
+
+@media  screen and (min-width:950px) {
+  .home-section{
+    background-image: url("/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg");
+    width: 100%;
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    transition: 0.5s ease;
+    background-repeat: no-repeat;
+  }
+}
