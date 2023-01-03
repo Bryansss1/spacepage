@@ -11,9 +11,9 @@ const Navbar = () => {
              <nav className='navbar-layout'>
         <img src={Logo} alt="" />
         <p className='line'></p>
-        {mobileClick &&<p className='uu' onClick={()=>setMo(!mobileClick)} style={{textAlign:"center",cursor:"pointer"}}>Menu<i className='bx bx-planet bx-md'></i></p>}
+        {mobileClick !==true?<p className='uu' onClick={()=>setMo(!mobileClick)} style={{textAlign:"center",cursor:"pointer"}}>Menu<i className='bx bx-planet bx-md'></i></p>:""}
 
-         <ul className={`navla ${mobileClick!==true?"visible":""}`}>
+         <ul className={`navla ${mobileClick===true?"visible":""}`}>
             <i onClick={()=>setMo(!mobileClick)} className='bx bxs-x-circle bx-md aa'></i>
             <li><Link to="/"><span>00</span> Home</Link></li>
             <li><Link to="/Destination"><span>01</span> Destination</Link></li>
