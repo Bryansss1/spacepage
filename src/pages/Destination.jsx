@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react';
 import styles from "../styles/Destination.module.scss"
 import Carousel from 'react-bootstrap/Carousel';
 import Navbar from '../components/Navbar';
+import moon from "/space-tourism-website-main/starter-code/assets/destination/image-moon.png"
+import titan from "/space-tourism-website-main/starter-code/assets/destination/image-titan.png"
+import marte from "/space-tourism-website-main/starter-code/assets/destination/image-mars.png"
+import europa from "/space-tourism-website-main/starter-code/assets/destination/image-europa.png"
 const Destination = () => {
 
 const [planets,setPlantes]=useState({})
@@ -36,7 +40,7 @@ console.log(planets)
 
         <img
           className={styles.images_destination}
-          src="/space-tourism-website-main/starter-code/assets/destination/image-europa.png"
+          src={europa}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -64,7 +68,7 @@ console.log(planets)
         </ul>
         <img
           className={styles.images_destination}
-          src="/space-tourism-website-main/starter-code/assets/destination/image-mars.png"
+          src={marte}
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -92,7 +96,7 @@ console.log(planets)
         </ul>
         <img
           className={styles.images_destination}
-          src="/space-tourism-website-main/starter-code/assets/destination/image-moon.png"
+          src={moon}
           alt={planets.destinations?.[0].description}
         />
         <Carousel.Caption>
@@ -120,7 +124,7 @@ console.log(planets)
         </ul>
         <img
           className={styles.images_destination}
-          src="/space-tourism-website-main/starter-code/assets/destination/image-titan.png"
+          src={titan}
           alt="Third slide"
         />
         <Carousel.Caption>
