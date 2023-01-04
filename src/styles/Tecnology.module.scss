@@ -4,3 +4,204 @@
     box-sizing: border-box;
     font-family: 'Nunito Sans', sans-serif;
 }
+
+
+.tecnology_section{
+background-image: url("/space-tourism-website-main/starter-code/assets/technology/background-technology-mobile.jpg");
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+min-height: 100vh;
+transition: 0.5s ease;
+background-repeat: no-repeat;
+h2{
+    text-shadow: 1px 1px 1px rgb(138, 138, 247);
+    font-size: 1.8rem;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+ 
+    span{
+        color: gray;
+        
+    }
+}
+}
+
+.tecno_arti{
+
+animation: opa ease-in-out 1s;
+}
+.tecno_arti2{
+    
+    animation: opa2 ease-in-out 1s ;
+}
+.tecno_arti3{
+ 
+    animation: opa3 ease-in-out 1s ;
+}
+
+
+
+
+.imgdiv1{
+width: 100%;
+}
+
+.divbuttons{
+margin-top: 2rem;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+button{
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 500%;
+    padding: 1.3rem;
+}
+}
+
+.info_tec{
+    padding: 0 .5rem;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    gap: 1rem;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+@keyframes opa3 {
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes opa2 {
+    0%{
+        opacity: 0.3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes opa {
+        0%{
+            opacity: 0.3;
+        }
+        100%{
+            opacity: 1;
+        }
+}
+
+@keyframes backco {
+    0%{
+       border: 3px solid blue;
+     }
+     50%{
+        border: 3px solid white;
+     }
+     100%{
+        border: 3px solid blue;
+     }
+}
+
+
+
+
+
+@media screen and (min-width:550px) {
+    .tecnology_section{
+        background-image: url("/space-tourism-website-main/starter-code/assets/technology/background-technology-tablet.jpg");
+    }
+    .divbuttons{
+        button{
+            padding: 2rem;
+        }
+    }
+}
+@media screen and (min-width:800px){
+    .tecnology_section{
+        background-image: url("/space-tourism-website-main/starter-code/assets/technology/background-technology-desktop.jpg");
+}
+
+.tecno_arti{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    animation: opa ease-in-out 1s;
+}
+.tecno_arti2{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    animation: opa ease-in-out 1s;
+     animation: opa2 ease-in-out 1s ;
+}
+.tecno_arti3{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+    animation: opa ease-in-out 1s;
+    animation: opa3 ease-in-out 1s ;
+}
+.imgdiv1{
+    border-radius: 3%;
+    max-width: 20rem;
+    animation: backco 3s infinite;
+    animation-timing-function: linear;
+}
+.divbuttons{
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    right: 50%;
+}
+.info_tec{
+    width: 50%;
+    position: relative;
+    left: 8%;
+}
+}
+
+@media screen  and (min-width:900px){
+    .divbuttons{
+        right: 56%;
+    }
+}
+
+@media screen  and (min-width:1100px){
+    .divbuttons{
+        right: 60%;
+    }
+}

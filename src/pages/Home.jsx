@@ -21,7 +21,7 @@ const navigate=useNavigate()
             </p>
         </article>
             <button onClick={()=>navigate("/Destination")}>EXPLORE</button>
-</section>
+        </section>
 
 </section>
     

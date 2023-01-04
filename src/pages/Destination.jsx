@@ -9,13 +9,6 @@ import marte from "/space-tourism-website-main/starter-code/assets/destination/i
 import europa from "/space-tourism-website-main/starter-code/assets/destination/image-europa.png"
 const Destination = () => {
 
-const [planets,setPlantes]=useState({})
-
-useEffect(()=>{
-axios.get("/space-tourism-website-main/starter-code/data.json")
-.then(res=>setPlantes(res.data))
-},[])
-
 
     return (
         <section className={styles.destination_section}>

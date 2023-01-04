@@ -8,6 +8,9 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+
+
+
 .uu{
   z-index: 20;
   color: white;
@@ -94,13 +97,16 @@
     display: none;
   }
 
+
 .home-section{
 color: white;
 background-image: url("/space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg");
-height:100vmax;
-width: 100%;
-background-repeat: no-repeat;
+background-position: center;
 background-size: cover;
+background-attachment: fixed;
+min-height: 100vh;
+transition: 0.5s ease;
+background-repeat: no-repeat;
 .header-home{
   margin-top: 6rem;
   margin-bottom: 3rem;
