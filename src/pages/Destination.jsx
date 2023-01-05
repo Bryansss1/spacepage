@@ -13,8 +13,8 @@ const Destination = () => {
     return (
         <section className={styles.destination_section}>
           <Navbar/>
-<Carousel style={{marginTop:"8rem"}}>
-      <Carousel.Item interval={1000}>
+<Carousel style={{marginTop:"6rem"}}>
+      <Carousel.Item style={{marginBottom:"6rem"}} interval={1000}>
 
       <h2>
        <span className={styles.title_span}>01</span> PICK YOUR DESTINATION
@@ -45,7 +45,7 @@ const Destination = () => {
         </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item interval={500}>
+      <Carousel.Item style={{marginBottom:"6rem"}} interval={500}>
       <h2>
        <span className={styles.title_span}>01</span> PICK YOUR DESTINATION
       </h2>
@@ -73,7 +73,7 @@ const Destination = () => {
         </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{marginBottom:"6rem"}}>
       <h2>
        <span className={styles.title_span}>01</span> PICK YOUR DESTINATION
       </h2>
@@ -101,7 +101,7 @@ const Destination = () => {
         </div>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item style={{marginBottom:"6rem"}}>
       <h2>
        <span className={styles.title_span}>01</span> PICK YOUR DESTINATION
       </h2>

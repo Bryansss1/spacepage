@@ -108,7 +108,7 @@ min-height: 100vh;
 transition: 0.5s ease;
 background-repeat: no-repeat;
 .header-home{
-  margin-top: 6rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -134,7 +134,11 @@ transition: all .3s;
 animation: rotatee infinite 5s;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
+text-align: center;
+position: relative;
+bottom: 2rem;
 cursor: pointer;
+
 }
 button:hover{
   box-shadow: 2px 2px 8px 2px whitesmoke;
@@ -165,6 +169,9 @@ button:hover{
   background-attachment: fixed;
   min-height: 100vh;
   transition: 0.5s ease;
+  button{
+    position: static;
+  }
 }
 }
 

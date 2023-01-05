@@ -20,7 +20,9 @@ const navigate=useNavigate()
             because we’ll give you a truly out of this world experience!
             </p>
         </article>
+     
             <button onClick={()=>navigate("/Destination")}>EXPLORE</button>
+       
         </section>
 
 </section>
