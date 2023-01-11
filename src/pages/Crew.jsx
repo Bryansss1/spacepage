@@ -14,7 +14,7 @@ const Crew = () => {
 
             <article>
 
-            <Carousel fade style={{marginTop:"9rem"}}>
+            <Carousel fade style={{marginTop:"6rem"}}>
         <Carousel.Item className={styles.cardcrew}>
         <h3>
             <span>02</span> MEET YOUR CREW
